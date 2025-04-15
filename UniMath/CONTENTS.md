@@ -1174,6 +1174,7 @@ The packages and files are listed here in logical order: each file depends only 
    - [Limits/CommaObjects.v](Bicategories/Limits/CommaObjects.v)
    - [Limits/Inserters.v](Bicategories/Limits/Inserters.v)
    - [Limits/IsoInserters.v](Bicategories/Limits/IsoInserters.v)
+   - [Limits/Inverters.v](Bicategories/Limits/Inverters.v)
    - [Limits/Equifiers.v](Bicategories/Limits/Equifiers.v)
    - [Limits/EilenbergMooreObjects.v](Bicategories/Limits/EilenbergMooreObjects.v)
    - [Limits/EilenbergMooreComonad.v](Bicategories/Limits/EilenbergMooreComonad.v)
