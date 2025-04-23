@@ -323,6 +323,8 @@ Limits/ProductEquivalences.v
 Limits/PullbackFunctions.v
 Limits/PullbackEquivalences.v
 Limits/InserterEquivalences.v
+Limits/InverterMorphisms.v
+Limits/InverterEquivalences.v
 Limits/EquifierEquivalences.v
 
 OrthogonalFactorization/Orthogonality.v

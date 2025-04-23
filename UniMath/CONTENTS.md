@@ -1201,6 +1201,8 @@ The packages and files are listed here in logical order: each file depends only 
    - [Limits/PullbackFunctions.v](Bicategories/Limits/PullbackFunctions.v)
    - [Limits/PullbackEquivalences.v](Bicategories/Limits/PullbackEquivalences.v)
    - [Limits/InserterEquivalences.v](Bicategories/Limits/InserterEquivalences.v)
+   - [Limits/InverterMorphisms.v](Bicategories/Limits/InverterMorphisms.v)
+   - [Limits/InverterEquivalences.v](Bicategories/Limits/InverterEquivalences.v)
    - [Limits/EquifierEquivalences.v](Bicategories/Limits/EquifierEquivalences.v)
    - [OrthogonalFactorization/Orthogonality.v](Bicategories/OrthogonalFactorization/Orthogonality.v)
    - [OrthogonalFactorization/FactorizationSystem.v](Bicategories/OrthogonalFactorization/FactorizationSystem.v)
