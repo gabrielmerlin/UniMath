@@ -30,6 +30,7 @@ Require Import UniMath.Bicategories.PseudoFunctors.Examples.Composition.
 Require Import UniMath.Bicategories.Limits.Final.
 Require Import UniMath.Bicategories.Limits.Products.
 Require Import UniMath.Bicategories.Limits.Inserters.
+Require Import UniMath.Bicategories.Limits.Inverters.
 Require Import UniMath.Bicategories.Limits.Equifiers.
 Require Import UniMath.Bicategories.Colimits.Initial.
 Require Import UniMath.Bicategories.Colimits.Coproducts.
@@ -111,6 +112,49 @@ Section Preserves.
        has_inserter_ump p
        →
        has_inserter_ump (psfunctor_inserter_cone p).
+
+  Definition psfunctor_inverter_cone
+             {x y : B₁}
+             {f g : x --> y}
+             {α : f ==> g}
+             (p : inverter_cone α)
+    : inverter_cone (## F α).
+  Proof.
+    use make_inverter_cone.
+    - exact (F p).
+    - exact (#F (inverter_cone_pr1 p)).
+    - use make_is_invertible_2cell.
+      + exact (psfunctor_comp F (inverter_cone_pr1 p) g
+               • ## F (inverter_cone_is_invertible_cell p)^-1
+               • (psfunctor_comp F (inverter_cone_pr1 p) f)^-1).
+      + abstract
+          (rewrite 2 ! vassocr ;
+           rewrite <- psfunctor_lwhisker ;
+           refine (!_) ;
+           apply vcomp_move_L_Vp ;
+           rewrite id2_left ;
+           rewrite vassocl, <- psfunctor_vcomp, vcomp_rinv, psfunctor_id2 ;
+           refine (!_) ;
+           apply id2_right).
+      + abstract
+          (apply (vcomp_rcancel _ (psfunctor_comp F (inverter_cone_pr1 p) g)) ;
+           rewrite vassocl,  <- psfunctor_lwhisker ;
+           rewrite vassocl, vassoc4 ;
+           rewrite vcomp_linv, id2_right, id2_left ;
+           rewrite vassocl, <- psfunctor_vcomp ;
+           rewrite vcomp_linv, psfunctor_id2 ;
+           apply id2_right).
+  Defined.
+
+  Definition preserves_inverters
+    : UU
+    := ∏ (x y : B₁)
+         (f g : x --> y)
+         (α : f ==> g)
+         (p : inverter_cone α),
+       has_inverter_ump p
+       →
+       has_inverter_ump (psfunctor_inverter_cone p).
 
   Definition psfunctor_equifier_cone
              {x y : B₁}
