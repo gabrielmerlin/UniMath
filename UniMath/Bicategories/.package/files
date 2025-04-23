@@ -148,6 +148,8 @@ PseudoFunctors/Yoneda.v
 PseudoFunctors/Biequivalence.v
 PseudoFunctors/Examples/StrictToPseudo.v
 PseudoFunctors/Examples/Projection.v
+PseudoFunctors/Examples/PostCompositionByPseudoFunctor.v
+PseudoFunctors/Examples/PreCompositionByPseudoFunctor.v
 
 MonoidalCategories/EquivalenceActegoriesAndActions.v
 

@@ -1051,6 +1051,8 @@ The packages and files are listed here in logical order: each file depends only 
    - [PseudoFunctors/Biequivalence.v](Bicategories/PseudoFunctors/Biequivalence.v)
    - [PseudoFunctors/Examples/StrictToPseudo.v](Bicategories/PseudoFunctors/Examples/StrictToPseudo.v)
    - [PseudoFunctors/Examples/Projection.v](Bicategories/PseudoFunctors/Examples/Projection.v)
+   - [PseudoFunctors/Examples/PostCompositionByPseudoFunctor.v](Bicategories/PseudoFunctors/Examples/PostCompositionByPseudoFunctor.v)
+   - [PseudoFunctors/Examples/PreCompositionByPseudoFunctor.v](Bicategories/PseudoFunctors/Examples/PreCompositionByPseudoFunctor.v)
    - [MonoidalCategories/EquivalenceActegoriesAndActions.v](Bicategories/MonoidalCategories/EquivalenceActegoriesAndActions.v)
    - [PseudoFunctors/Biadjunction.v](Bicategories/PseudoFunctors/Biadjunction.v)
    - [PseudoFunctors/UniversalArrow.v](Bicategories/PseudoFunctors/UniversalArrow.v)
