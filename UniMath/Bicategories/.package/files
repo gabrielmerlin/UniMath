@@ -150,6 +150,7 @@ PseudoFunctors/Examples/StrictToPseudo.v
 PseudoFunctors/Examples/Projection.v
 PseudoFunctors/Examples/PostCompositionByPseudoFunctor.v
 PseudoFunctors/Examples/PreCompositionByPseudoFunctor.v
+Modifications/Examples/Pentagonators.v
 
 MonoidalCategories/EquivalenceActegoriesAndActions.v
 
